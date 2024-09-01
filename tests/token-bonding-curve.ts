@@ -18,7 +18,7 @@ const generateNewGenericAccount = async (
   const newAccount = anchor.web3.Keypair.generate();
 
   // Create account transaction.
-  const tx = new anchor.web3.Transaction();
+  // const tx = new anchor.web3.Transaction();
   tx.add(
     anchor.web3.SystemProgram.createAccount({
       fromPubkey: fromPubkey,
